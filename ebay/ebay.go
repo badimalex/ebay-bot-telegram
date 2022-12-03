@@ -8,11 +8,6 @@ import (
 	"github.com/PuerkitoBio/goquery"
 )
 
-var (
-	Token  string
-	ChatId string
-)
-
 func getHtml(url string) *http.Response {
   response, error := http.Get(url)
 	if error != nil {
